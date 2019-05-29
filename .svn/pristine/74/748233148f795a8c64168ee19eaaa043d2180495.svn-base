@@ -1,0 +1,2227 @@
+---------------------------------------------------------------
+[ 2018-07-05T19:15:46+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.029182s][吞吐率：34.27req/s] [内存消耗：1,181.55kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:15:52+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.077539s][吞吐率：12.90req/s] [内存消耗：2,126.10kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011430s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.023652s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000637s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:15:52+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.030904s][吞吐率：32.36req/s] [内存消耗：1,181.34kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:17:26+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.074179s][吞吐率：13.48req/s] [内存消耗：2,126.10kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001561s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.029546s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:17:26+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.030384s][吞吐率：32.91req/s] [内存消耗：1,181.34kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:17:29+08:00 ] 127.0.0.1 GET /admin/picturelist/add.html
+[ info ] www.yy.com/admin/picturelist/add.html [运行时间：0.039938s][吞吐率：25.04req/s] [内存消耗：1,460.88kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->Add[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:17:29+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.027303s][吞吐率：36.63req/s] [内存消耗：1,181.32kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/add.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:17:47+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.061511s][吞吐率：16.26req/s] [内存消耗：2,126.10kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000826s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.019597s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:17:47+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.033720s][吞吐率：29.66req/s] [内存消耗：1,181.34kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:19:50+08:00 ] 127.0.0.1 GET /admin/picturelist/index.html
+[ info ] www.yy.com/admin/picturelist/index.html [运行时间：0.077527s][吞吐率：12.90req/s] [内存消耗：2,229.48kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000925s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.020927s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` ORDER BY id desc [ RunTime:0.000492s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:19:53+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.064468s][吞吐率：15.51req/s] [内存消耗：2,125.55kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010533s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.019047s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:19:53+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,181.34kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:19:59+08:00 ] 127.0.0.1 POST /admin/picturelist/uppic.html
+[ info ] www.yy.com/admin/picturelist/uppic.html [运行时间：0.049834s][吞吐率：20.07req/s] [内存消耗：1,405.30kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'uppic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary3OA6Aoam7Q2ewv3X',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.yy.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '12715',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/uppic_html' => '',
+  'id' => '18',
+  'zl_name' => 'aasdd',
+  'zl_img' => '20180705\\0d4b6fed5623cd097d60a6cb5c39bbae.png',
+  'content' => '<pre class="hljs xml"><span class="javascript"><span class="hljs-comment" style="color:#999988;">弹出一个iframe层</span> $(<span class="hljs-string" style="color:#DD1144;">\'#parentIframe\'</span>).on(<span class="hljs-string" style="color:#DD1144;">\'click\'</span>, <span class="hljs-function"><span class="hljs-keyword" style="font-weight:bold;">function</span> (<span class="hljs-params"></span>) </span>{
+        layer.open({ <span class="hljs-attr">type</span>: <span class="hljs-number" style="color:#008080;">2</span>, <span class="hljs-attr">title</span>: <span class="hljs-string" style="color:#DD1144;">\'点击弹出窗口\'</span>, <span class="hljs-attr">maxmin</span>: <span class="hljs-literal" style="color:#008080;">true</span>, <span class="hljs-attr">shadeClose</span>: <span class="hljs-literal" style="color:#008080;">true</span>, <span class="hljs-comment" style="color:#999988;">//点击遮罩关闭层</span> area: [<span class="hljs-string" style="color:#DD1144;">\'800px\'</span>, <span class="hljs-string" style="color:#DD1144;">\'520px\'</span>], <span class="hljs-attr">content</span>: <span class="hljs-string" style="color:#DD1144;">\'http://127.0.0.1/test/layer/form.php\'</span> });
+    }); </span><span class="hljs-tag" style="color:#000080;"><!--<span class="hljs-name"-->script</span>&gt;</pre>
+<p style="color:#333333;font-family:-apple-system, BlinkMacSystemFont, " font-size:15px;background-color:#ffffff;"="">
+	点击“点击弹出窗口”按钮，页面会弹出子窗口显示<a href="http://127.0.0.1/test/layer/form.php" target="_blank">http://127.0.0.1/test/layer/f...</a>的页面内容，form.php的代码如下：
+	</p>
+<pre class="hljs xml"><span class="php"><span class="hljs-meta" style="color:#999999;font-weight:bold;"><!--?php<span class="hljs-keyword" style="font-weight:bold;">if</span> ($_POST) { <span class="hljs-comment" style="color:#999988;">//处理你的业务...</span> <span class="hljs-keyword" style="font-weight:bold;">echo</span> <span class="hljs-string" style="color:#DD1144;">""</span>; <span class="hljs-keyword" style="font-weight:bold;">die</span>;
+} <span class="hljs-meta" style="color:#999999;font-weight:bold;">?&gt;</span></span> <span class="hljs-meta" style="color:#999999;font-weight:bold;"></span> <span class="hljs-tag" style="color:#000080;">&lt;<span class="hljs-name">html</span> <span class="hljs-attr" style="color:#008080;">lang</span>=<span class="hljs-string" style="color:#DD1144;">"en"</span>&gt;&lt;</span></span></pre>',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->uppic[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:20:22+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.095791s][吞吐率：10.44req/s] [内存消耗：2,303.05kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010926s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.032513s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000524s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:20:22+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.034287s][吞吐率：29.17req/s] [内存消耗：1,181.34kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:20:44+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.060980s][吞吐率：16.40req/s] [内存消耗：2,125.55kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000821s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.023836s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000437s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:20:44+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.024644s][吞吐率：40.58req/s] [内存消耗：1,181.15kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:20:52+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.040048s][吞吐率：24.97req/s] [内存消耗：1,181.15kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:20:53+08:00 ] 127.0.0.1 GET /lib/Hui-iconfont/1.0.8/iconfont.css
+[ info ] www.yy.com/lib/Hui-iconfont/1.0.8/iconfont.css [运行时间：0.066218s][吞吐率：15.10req/s] [内存消耗：1,180.16kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'Hui-iconfont',
+    2 => '1.0.8',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/Hui-iconfont/1_0_8/iconfont_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:17+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.064416s][吞吐率：15.52req/s] [内存消耗：2,303.29kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000875s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.018346s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:23:17+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.028280s][吞吐率：35.36req/s] [内存消耗：1,181.48kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:17+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.046165s][吞吐率：21.66req/s] [内存消耗：1,419.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:17+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.yy.com/admin/index/welcome.html [运行时间：0.042680s][吞吐率：23.43req/s] [内存消耗：1,360.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ VIEW ] ../Theme/Admin/index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:17+08:00 ] 127.0.0.1 GET /lib/Hui-iconfont/1.0.8/iconfont.css
+[ info ] www.yy.com/lib/Hui-iconfont/1.0.8/iconfont.css [运行时间：0.034023s][吞吐率：29.39req/s] [内存消耗：1,181.00kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'Hui-iconfont',
+    2 => '1.0.8',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/Hui-iconfont/1_0_8/iconfont_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:18+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.061486s][吞吐率：16.26req/s] [内存消耗：1,419.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:18+08:00 ] 127.0.0.1 GET /lib/jquery/1.9.1/jquery.min.js
+[ info ] www.yy.com/lib/jquery/1.9.1/jquery.min.js [运行时间：0.073470s][吞吐率：13.61req/s] [内存消耗：1,180.95kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'jquery',
+    2 => '1.9.1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/jquery/1_9_1/jquery_min_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:18+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.034745s][吞吐率：28.78req/s] [内存消耗：1,419.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:19+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.yy.com/admin/index/welcome.html [运行时间：0.048318s][吞吐率：20.70req/s] [内存消耗：1,360.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ VIEW ] ../Theme/Admin/index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:19+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.044438s][吞吐率：22.50req/s] [内存消耗：1,419.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:19+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.yy.com/admin/index/welcome.html [运行时间：0.045801s][吞吐率：21.83req/s] [内存消耗：1,360.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ VIEW ] ../Theme/Admin/index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:19+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.050623s][吞吐率：19.75req/s] [内存消耗：1,419.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:19+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.yy.com/admin/index/welcome.html [运行时间：0.045009s][吞吐率：22.22req/s] [内存消耗：1,360.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ VIEW ] ../Theme/Admin/index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:19+08:00 ] 127.0.0.1 GET /lib/Hui-iconfont/1.0.8/iconfont.css
+[ info ] www.yy.com/lib/Hui-iconfont/1.0.8/iconfont.css [运行时间：0.024093s][吞吐率：41.51req/s] [内存消耗：1,181.00kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'Hui-iconfont',
+    2 => '1.0.8',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/Hui-iconfont/1_0_8/iconfont_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:19+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.yy.com/admin/index/welcome.html [运行时间：0.042224s][吞吐率：23.68req/s] [内存消耗：1,360.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ VIEW ] ../Theme/Admin/index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:20+08:00 ] 127.0.0.1 GET /lib/Hui-iconfont/1.0.8/iconfont.css
+[ info ] www.yy.com/lib/Hui-iconfont/1.0.8/iconfont.css [运行时间：0.064090s][吞吐率：15.60req/s] [内存消耗：1,181.00kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'Hui-iconfont',
+    2 => '1.0.8',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/Hui-iconfont/1_0_8/iconfont_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:20+08:00 ] 127.0.0.1 GET /lib/jquery/1.9.1/jquery.min.js
+[ info ] www.yy.com/lib/jquery/1.9.1/jquery.min.js [运行时间：0.028729s][吞吐率：34.81req/s] [内存消耗：1,180.95kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'jquery',
+    2 => '1.9.1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/jquery/1_9_1/jquery_min_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:20+08:00 ] 127.0.0.1 GET /lib/jquery/1.9.1/jquery.min.js
+[ info ] www.yy.com/lib/jquery/1.9.1/jquery.min.js [运行时间：0.052320s][吞吐率：19.11req/s] [内存消耗：1,180.95kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'jquery',
+    2 => '1.9.1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/jquery/1_9_1/jquery_min_js' => '',
+)
+[ info ] [ LOG ] INIT File
+ '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:20+08:00 ] 127.0.0.1 GET /lib/jquery/1.9.1/jquery.min.js
+[ info ] www.yy.com/lib/jquery/1.9.1/jquery.min.js [运行时间：0.066784s][吞吐率：14.97req/s] [内存消耗：1,180.95kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'jquery',
+    2 => '1.9.1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/jquery/1_9_1/jquery_min_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:21+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.089013s][吞吐率：11.23req/s] [内存消耗：1,419.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530788898',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:21+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.031596s][吞吐率：31.65req/s] [内存消耗：1,419.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789801',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:41+08:00 ] 127.0.0.1 GET /
+[ info ] www.yy.com/ [运行时间：0.120609s][吞吐率：8.29req/s] [内存消耗：1,522.15kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789801',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Login.php ]
+[ info ] [ VIEW ] ../Theme/Admin/login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:42+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.yy.com/captcha.html [运行时间：0.637903s][吞吐率：1.57req/s] [内存消耗：1,202.20kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789801',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\ymcx\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:42+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.yy.com/captcha.html [运行时间：0.162445s][吞吐率：6.16req/s] [内存消耗：1,202.45kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789801',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\ymcx\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:52+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] www.yy.com/admin/login/login.html [运行时间：0.381084s][吞吐率：2.62req/s] [内存消耗：2,115.11kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789801',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.yy.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'id' => '',
+  'username' => 'admin',
+  'password' => 'admin',
+  'code' => 'pte4',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005524s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_user` [ RunTime:0.071611s ]
+[ sql ] [ SQL ] SELECT * FROM `y_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000934s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:23:52+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.055996s][吞吐率：17.86req/s] [内存消耗：1,419.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789801',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:52+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.yy.com/admin/index/welcome.html [运行时间：0.023375s][吞吐率：42.78req/s] [内存消耗：1,360.02kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789801',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ VIEW ] ../Theme/Admin/index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:53+08:00 ] 127.0.0.1 GET /lib/Hui-iconfont/1.0.8/iconfont.css
+[ info ] www.yy.com/lib/Hui-iconfont/1.0.8/iconfont.css [运行时间：0.030080s][吞吐率：33.24req/s] [内存消耗：1,180.16kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'Hui-iconfont',
+    2 => '1.0.8',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789801',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/Hui-iconfont/1_0_8/iconfont_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:53+08:00 ] 127.0.0.1 GET /lib/jquery/1.9.1/jquery.min.js
+[ info ] www.yy.com/lib/jquery/1.9.1/jquery.min.js [运行时间：0.024616s][吞吐率：40.62req/s] [内存消耗：1,180.12kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'jquery',
+    2 => '1.9.1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789801',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/jquery/1_9_1/jquery_min_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:23:54+08:00 ] 127.0.0.1 GET /admin/picturelist/index.html
+[ info ] www.yy.com/admin/picturelist/index.html [运行时间：0.087837s][吞吐率：11.38req/s] [内存消耗：2,096.02kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789833',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000920s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.025012s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` ORDER BY id desc [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:23:58+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.059426s][吞吐率：16.83req/s] [内存消耗：2,125.87kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789833',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.023238s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:23:58+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.028694s][吞吐率：34.85req/s] [内存消耗：1,181.15kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789833',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:26:15+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.072787s][吞吐率：13.74req/s] [内存消耗：2,303.23kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789833',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.027443s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:26:15+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.024501s][吞吐率：40.81req/s] [内存消耗：1,181.15kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789833',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:26:24+08:00 ] 127.0.0.1 POST /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.293928s][吞吐率：3.40req/s] [内存消耗：2,089.79kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789833',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryzexyJMHL3zB1RG5K',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.yy.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '12715',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+  'zl_name' => 'aasdd',
+  'zl_img' => '20180705\\0d4b6fed5623cd097d60a6cb5c39bbae.png',
+  'content' => '<pre class="hljs xml"><span class="javascript"><span class="hljs-comment" style="color:#999988;">弹出一个iframe层</span> $(<span class="hljs-string" style="color:#DD1144;">\'#parentIframe\'</span>).on(<span class="hljs-string" style="color:#DD1144;">\'click\'</span>, <span class="hljs-function"><span class="hljs-keyword" style="font-weight:bold;">function</span> (<span class="hljs-params"></span>) </span>{
+        layer.open({ <span class="hljs-attr">type</span>: <span class="hljs-number" style="color:#008080;">2</span>, <span class="hljs-attr">title</span>: <span class="hljs-string" style="color:#DD1144;">\'点击弹出窗口\'</span>, <span class="hljs-attr">maxmin</span>: <span class="hljs-literal" style="color:#008080;">true</span>, <span class="hljs-attr">shadeClose</span>: <span class="hljs-literal" style="color:#008080;">true</span>, <span class="hljs-comment" style="color:#999988;">//点击遮罩关闭层</span> area: [<span class="hljs-string" style="color:#DD1144;">\'800px\'</span>, <span class="hljs-string" style="color:#DD1144;">\'520px\'</span>], <span class="hljs-attr">content</span>: <span class="hljs-string" style="color:#DD1144;">\'http://127.0.0.1/test/layer/form.php\'</span> });
+    }); </span><span class="hljs-tag" style="color:#000080;"><!--<span class="hljs-name"-->script</span>&gt;</pre>
+<p style="color:#333333;font-family:-apple-system, BlinkMacSystemFont, " font-size:15px;background-color:#ffffff;"="">
+	点击“点击弹出窗口”按钮，页面会弹出子窗口显示<a href="http://127.0.0.1/test/layer/form.php" target="_blank">http://127.0.0.1/test/layer/f...</a>的页面内容，form.php的代码如下：
+	</p>
+<pre class="hljs xml"><span class="php"><span class="hljs-meta" style="color:#999999;font-weight:bold;"><!--?php<span class="hljs-keyword" style="font-weight:bold;">if</span> ($_POST) { <span class="hljs-comment" style="color:#999988;">//处理你的业务...</span> <span class="hljs-keyword" style="font-weight:bold;">echo</span> <span class="hljs-string" style="color:#DD1144;">""</span>; <span class="hljs-keyword" style="font-weight:bold;">die</span>;
+} <span class="hljs-meta" style="color:#999999;font-weight:bold;">?&gt;</span></span> <span class="hljs-meta" style="color:#999999;font-weight:bold;"></span> <span class="hljs-tag" style="color:#000080;">&lt;<span class="hljs-name">html</span> <span class="hljs-attr" style="color:#008080;">lang</span>=<span class="hljs-string" style="color:#DD1144;">"en"</span>&gt;&lt;</span></span></pre>',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000831s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.050040s ]
+[ sql ] [ SQL ] UPDATE `y_ggzl`  SET `id`=18,`zl_name`='aasdd',`zl_img`='20180705\\597deaaa686f6face95dad4f6cd27b26.png',`content`='<pre class=\"hljs xml\"><span class=\"javascript\"><span class=\"hljs-comment\" style=\"color:#999988;\">弹出一个iframe层</span> $(<span class=\"hljs-string\" style=\"color:#DD1144;\">\'#parentIframe\'</span>).on(<span class=\"hljs-string\" style=\"color:#DD1144;\">\'click\'</span>, <span class=\"hljs-function\"><span class=\"hljs-keyword\" style=\"font-weight:bold;\">function</span> (<span class=\"hljs-params\"></span>) </span>{\r\n        layer.open({ <span class=\"hljs-attr\">type</span>: <span class=\"hljs-number\" style=\"color:#008080;\">2</span>, <span class=\"hljs-attr\">title</span>: <span class=\"hljs-string\" style=\"color:#DD1144;\">\'点击弹出窗口\'</span>, <span class=\"hljs-attr\">maxmin</span>: <span class=\"hljs-literal\" style=\"color:#008080;\">true</span>, <span class=\"hljs-attr\">shadeClose</span>: <span class=\"hljs-literal\" style=\"color:#008080;\">true</span>, <span class=\"hljs-comment\" style=\"color:#999988;\">//点击遮罩关闭层</span> area: [<span class=\"hljs-string\" style=\"color:#DD1144;\">\'800px\'</span>, <span class=\"hljs-string\" style=\"color:#DD1144;\">\'520px\'</span>], <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\" style=\"color:#DD1144;\">\'http://127.0.0.1/test/layer/form.php\'</span> });\r\n    }); </span><span class=\"hljs-tag\" style=\"color:#000080;\"><!--<span class=\"hljs-name\"-->script</span>&gt;</pre>\r\n<p style=\"color:#333333;font-family:-apple-system, BlinkMacSystemFont, \" font-size:15px;background-color:#ffffff;\"=\"\">\r\n	点击“点击弹出窗口”按钮，页面会弹出子窗口显示<a href=\"http://127.0.0.1/test/layer/form.php\" target=\"_blank\">http://127.0.0.1/test/layer/f...</a>的页面内容，form.php的代码如下：\r\n	</p>\r\n<pre class=\"hljs xml\"><span class=\"php\"><span class=\"hljs-meta\" style=\"color:#999999;font-weight:bold;\"><!--?php<span class=\"hljs-keyword\" style=\"font-weight:bold;\">if</span> ($_POST) { <span class=\"hljs-comment\" style=\"color:#999988;\">//处理你的业务...</span> <span class=\"hljs-keyword\" style=\"font-weight:bold;\">echo</span> <span class=\"hljs-string\" style=\"color:#DD1144;\">\"\"</span>; <span class=\"hljs-keyword\" style=\"font-weight:bold;\">die</span>;\r\n} <span class=\"hljs-meta\" style=\"color:#999999;font-weight:bold;\">?&gt;</span></span> <span class=\"hljs-meta\" style=\"color:#999999;font-weight:bold;\"></span> <span class=\"hljs-tag\" style=\"color:#000080;\">&lt;<span class=\"hljs-name\">html</span> <span class=\"hljs-attr\" style=\"color:#008080;\">lang</span>=<span class=\"hljs-string\" style=\"color:#DD1144;\">\"en\"</span>&gt;&lt;</span></span></pre>'  WHERE  `id` = 18 [ RunTime:0.001328s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:27:37+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.068913s][吞吐率：14.51req/s] [内存消耗：2,124.99kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789833',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001033s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.024996s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000359s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:29:57+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.050589s][吞吐率：19.77req/s] [内存消耗：1,419.60kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789833',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:29:58+08:00 ] 127.0.0.1 GET /lib/Hui-iconfont/1.0.8/iconfont.css
+[ info ] www.yy.com/lib/Hui-iconfont/1.0.8/iconfont.css [运行时间：0.031265s][吞吐率：31.98req/s] [内存消耗：1,180.16kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'Hui-iconfont',
+    2 => '1.0.8',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530789833',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/Hui-iconfont/1_0_8/iconfont_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:30:00+08:00 ] 127.0.0.1 GET /admin/picturelist/index.html
+[ info ] www.yy.com/admin/picturelist/index.html [运行时间：0.070313s][吞吐率：14.22req/s] [内存消耗：2,095.14kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530790199',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000882s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.031622s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` ORDER BY id desc [ RunTime:0.000498s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:30:02+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.055025s][吞吐率：18.17req/s] [内存消耗：2,302.42kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530790199',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000884s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.014759s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000440s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:30:02+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.026262s][吞吐率：38.08req/s] [内存消耗：1,181.15kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530615127; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530790199',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:30:45+08:00 ] 127.0.0.1 GET /admin/picturelist/save/id/18.html
+[ info ] www.yy.com/admin/picturelist/save/id/18.html [运行时间：0.074756s][吞吐率：13.38req/s] [内存消耗：2,302.36kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picturelist',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530790199; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530790205',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/picturelist/save/id/18_html' => '',
+  'id' => '18',
+)
+[ info ] [ RUN ] app\admin\controller\Picturelist->save[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Picturelist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/Admin/picturelist\save.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000853s ] mysql:host=127.0.0.1;port=3306;dbname=yscx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_ggzl` [ RunTime:0.017809s ]
+[ sql ] [ SQL ] SELECT * FROM `y_ggzl` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000491s ]
+---------------------------------------------------------------
+[ 2018-07-05T19:30:45+08:00 ] 127.0.0.1 GET /public/static/admin/kindeditor/plugins/code/prettify.css
+[ info ] www.yy.com/public/static/admin/kindeditor/plugins/code/prettify.css [运行时间：0.026466s][吞吐率：37.78req/s] [内存消耗：1,181.15kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530790199; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530790205',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/picturelist/save/id/18.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/admin/kindeditor/plugins/code/prettify_css' => '',
+  'kindeditor' => 'plugins',
+  'code' => 'prettify.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:30:46+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.yy.com/admin/index/index.html [运行时间：0.049152s][吞吐率：20.35req/s] [内存消耗：1,419.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530790199; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530790205',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'Admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ../Theme/Admin/index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:30:46+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.yy.com/admin/index/welcome.html [运行时间：0.040230s][吞吐率：24.86req/s] [内存消耗：1,360.02kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=blue; PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530790199; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530790205',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\ymcx\application\Admin\controller\Index.php ]
+[ info ] [ VIEW ] ../Theme/Admin/index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:30:46+08:00 ] 127.0.0.1 GET /lib/Hui-iconfont/1.0.8/iconfont.css
+[ info ] www.yy.com/lib/Hui-iconfont/1.0.8/iconfont.css [运行时间：0.022670s][吞吐率：44.11req/s] [内存消耗：1,180.16kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'Hui-iconfont',
+    2 => '1.0.8',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530790199; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530790205',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/Hui-iconfont/1_0_8/iconfont_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T19:30:47+08:00 ] 127.0.0.1 GET /lib/jquery/1.9.1/jquery.min.js
+[ info ] www.yy.com/lib/jquery/1.9.1/jquery.min.js [运行时间：0.023134s][吞吐率：43.23req/s] [内存消耗：1,180.12kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\ymcx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'lib',
+    1 => 'jquery',
+    2 => '1.9.1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=m6770k0v0153p981evola0gdc5; Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1530495153,1530521721; Hm_lvt_080836300300be57b7f34f4b3e97d911=1530498077,1530780112; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1530790199; Hm_lpvt_dde6ba2851f3db0ddc415ce0f895822e=1530790205',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.yy.com/admin/index/welcome.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.yy.com',
+)
+[ info ] [ PARAM ] array (
+  '/lib/jquery/1_9_1/jquery_min_js' => '',
+)
+[ info ] [ LOG ] INIT File

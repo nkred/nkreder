@@ -1,0 +1,108 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Admin
+ * Date: 2018/5/10
+ * Time: 14:30
+ */
+
+namespace app\admin\controller;
+
+use think\Controller;
+
+class Ysbrand extends Controller
+{
+    public function index(){
+        $list=db('ys')->where('status','0')->select();
+        foreach ($list as $k=>$v){
+            $list[$k]['md']=db('md')
+                ->where('id',$v['md_id'])
+                ->field('md_name')
+                ->find();
+            }
+        $this->assign('list',$list);
+        return view();
+    }
+    public function add(){
+        if (request()->isPost()){
+            $data=input('post.');
+            $papers=upload('papers');
+            $head=upload('head');
+            $md_id=db('md')->where('md_name',$data['md_id'])->field('id')->find();
+            $data['md_id']=$md_id['id'];
+            if (empty($papers) && empty($head)){
+                $this->error('资格证和头像不能为空');
+            }else if (empty($papers)){
+                $this->error('资格证不能为空');
+            }else if (empty($head)){
+                $this->error('头像不能为空');
+            }
+            $data['papers']=$papers;
+            $data['head']=$head;
+            $data['status']=0;
+            $data['addtime']=time();
+            $list=db('ys')->insert($data);
+            if ($list){
+                $this->success('添加成功','index');
+            }else{
+                $this->error('添加失败');
+            }
+        }else{
+            $md_name=db('md')->field('md_name,id')->select();
+            $this->assign('list',$md_name);
+            return view();
+        }
+    }
+    public function save(){
+        if (request()->isPost()){
+            $data=input('post.');
+            $papers=upload('papers');
+            $head=upload('head');
+            $md_id=db('md')->where('md_name',$data['md_id'])->field('id')->find();
+            $data['md_id']=$md_id['id'];
+            if (empty($papers) && empty($head)){
+                $papers=$data['papers'];
+                $head=$data['head'];
+            }elseif(empty($papers)){
+                $papers=$data['papers'];
+            }elseif (empty($head)){
+                $head=$data['head'];
+            }
+            $data['papers']=$papers;
+            $data['head']=$head;
+            $data['status']=0;
+            $list=db('ys')->where('id',$data['id'])->update($data);
+            if ($list){
+                $this->success('修改成功','index');
+            }else{
+                $this->error('修改失败');
+            }
+        }else{
+            $data=input('id');
+            $list=db('ys')->where('id',$data)->find();
+            $md_name=db('md')->field('md_name,id')->select();
+            $this->assign('md_name',$md_name);
+            $this->assign('list',$list);
+            return view();
+        }
+    }
+    public function del(){
+        $id=input('id');
+        $list=db('ys')->where('id',$id)->delete();
+        if ($list){
+            return ajaxmsg('删除成功',1);
+        }else{
+            return ajaxmsg('删除失败',0);
+        }
+    }
+    public function Alldel(){
+        $id=input('id/a');
+        $dataId=implode(',',$id);
+        $list=db('ys')->where('id',$id)->delete($dataId);
+        if ($list){
+            $this->success('删除成功','index');
+        }else{
+            $this->error('删除失败');
+        }
+    }
+}

@@ -1,0 +1,91 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Admin
+ * Date: 2018/5/10
+ * Time: 14:03
+ */
+
+namespace app\admin\controller;
+
+
+use think\Controller;
+
+class Articlelist extends Controller
+{
+    public function index(){
+        $list=db('md')->order('id desc')->select();
+        foreach ($list as $k=>$v){
+            $list[$k]['md_img']=json_decode($v['md_img'],true);
+        }
+        $this->assign('list',$list);
+        return view();
+    }
+    public function add(){
+        if (request()->isPost()){
+            $data=input('post.');
+            $data['md_img']=upload('md_img');
+            $data['md_head']=upload('md_head');
+            $data['addtime']=time();
+            $list=db('md')->insert($data);
+            if ($list){
+                $this->success('添加成功','Articlelist/index');
+            }else{
+                $this->error('添加失败');
+            }
+        }else{
+            return view();
+        }
+    }
+    public function save(){
+        if (request()->isPost()){
+            $data=input('post.');
+            $img=upload('md_img');
+            $head=upload('md_head');
+            if (empty($head)){
+                $head=$data['md_head'];
+            }
+            if (empty($img)){
+                $img= json_encode($data['md_img']);
+            }
+            if (empty($img) && empty($head)){
+                $this->error('未上传图片');
+            }
+            $data['md_head']=$head;
+            $data['md_img']=$img;
+            $list=db('md')->where('id',$data['id'])->update($data);
+            if ($list){
+                $this->success('修改成功','Articlelist/index');
+            }else{
+                $this->error('修改失败');
+            }
+        }else{
+            $id=input('id');
+            $list=db('md')->where('id',$id)->find();
+            $list['md_img']=json_decode($list['md_img'],true);
+            $this->assign('list',$list);
+            return view();
+        }
+    }
+    public function del(){
+        $id=input('id');
+        $list=db('md')->where('id',$id)->delete();
+        if ($list){
+            ajaxmsg('已删除',1);
+        }else{
+            ajaxmsg('删除失败',0);
+        }
+    }
+    public function Alldel(){
+        if (request()->isPost()){
+            $data=input('id/a');
+            $dataid=implode(',',$data);
+            $list=db('md')->delete($dataid);
+            if ($list){
+                $this->success('删除成功','Articlelist/index');
+            }else{
+                $this->error('删除失败');
+            }
+        }
+    }
+}

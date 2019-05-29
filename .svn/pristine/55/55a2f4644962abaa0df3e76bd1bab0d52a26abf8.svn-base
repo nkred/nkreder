@@ -1,0 +1,38 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Admin
+ * Date: 2018/5/10
+ * Time: 14:50
+ */
+
+namespace app\admin\controller;
+
+
+use think\Controller;
+
+class Charts extends Controller
+{
+    public function charts1(){
+        return view();
+    }
+    public function charts2(){
+        return view();
+    }
+    public function charts3(){
+        return view();
+    }
+    public function charts4(){
+        return view();
+    }
+    public function charts5(){
+        return view();
+    }
+    public function charts6(){
+        return view();
+    }
+    public function charts7(){
+        return view();
+    }
+
+}

@@ -1,0 +1,63 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Admin
+ * Date: 2018/6/4
+ * Time: 16:14
+ */
+
+namespace app\Home\controller;
+
+
+use think\Controller;
+use think\Db;
+
+class Classfy extends Controller
+{
+    public function index(){
+        $qiche=Db::name('goods')->where(['class_id'=>'1'])->limit(6)->select();
+        $this->assign('qiche',$qiche);
+        $motuoche = Db::name('goods')->where(['class_id'=>'2'])->limit(6)->select();
+        $this->assign('motuoche',$motuoche);
+        $peijian = Db::name('goods')->where(['class_id'=>'3'])->limit(6)->select();
+        $this->assign('peijian',$peijian);
+        $lbj=Db::name('qmc')->where(['bzl_id'=>'1'])->limit(6)->select();
+        $this->assign('lbj',$lbj);
+        $qszb=Db::name('qmc')->where(['bzl_id'=>'2'])->limit(6)->select();
+        $this->assign('qszb',$qszb);
+        $wxby=Db::name('pby')->where(['bzl_id'=>'3'])->limit(6)->select();
+        $this->assign('wxby',$wxby);
+        $ryj=Db::name('pby')->where(['bzl_id'=>'4'])->limit(6)->select();
+        $this->assign('ryj',$ryj);
+        $bzl = Db::name('bzl')
+            ->field('id ids,name')
+            ->select();
+        $goods = Db::name('goodsclass')
+            ->field('id ids,name')
+            ->select();
+        foreach ($goods as $k=>$v) {
+            if ($v['ids'] == '4'){
+                unset($goods[$k]);
+            }else
+            if ($v['ids'] == '5'){
+                unset($goods[$k]);
+            }else
+            if ($v['ids'] == '6'){
+                unset($goods[$k]);
+            }else
+            if ($v['ids'] == '7'){
+                unset($goods[$k]);
+            }
+        }
+        $ids=array_merge($goods,$bzl);
+        $this->assign('ids',$ids);
+        $qmc=Db::name('qmc')->where(['rmtj'=>'1'])->field('rmtj,goods_name name,img,id ids')->select();
+        $pby=Db::name('pby')->where(['rmtj'=>'1'])->field('rmtj,goods_name name,img,id ids')->select();
+        $go=Db::name('goods')->where(['rmtj'=>'1'])->field('rmtj,name,img,id ids')->select();
+        $rmtj=array_merge($qmc,$pby,$go);
+        $rmtj1= array_slice($rmtj,0,6);
+
+        $this->assign('rmtj',$rmtj1);
+        return view();
+    }
+}

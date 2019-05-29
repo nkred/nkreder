@@ -1,0 +1,60 @@
+{include file="Public/header" /}
+<div class="page-container">
+	<form action="{:url('see')}"  method="post" class="form form-horizontal" id="form-category-add">
+		<input name="id" value="{$id}" hidden>
+		<div id="tab-category" class="HuiTab">
+			<div class="tabCon">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						金额：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="" placeholder="请输入金额" id="num" name="num">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+						<input class="btn btn-primary radius" type="button" onclick="refer();" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+{include file="Public/footer" /}
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+
+	$("#tab-category").Huitab({
+		index:0
+	});
+});
+function refer() {
+    var id = $("[name='id']").val();
+    var num = $("[name='num']").val();
+    $.ajax({
+        url:'see',
+        data:{'id':id,'num':num},
+        type:"POST",
+        success:function(res){
+            data = JSON.parse(res);
+            if(data.status==1){
+                layer.msg(data.msg,{icon: 1,time:1000},function(){
+                    // $(“#mymodal”).modal(“hide”)
+                    window.parent.location.reload();
+                });
+            }else{
+                layer.msg(data.msg,{icon:2,time:1000});return false;
+            }
+        }
+    });
+}
+
+</script>

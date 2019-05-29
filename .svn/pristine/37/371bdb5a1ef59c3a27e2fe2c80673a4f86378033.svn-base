@@ -1,0 +1,97 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Admin
+ * Date: 2018/5/10
+ * Time: 14:28
+ */
+
+namespace app\admin\controller;
+
+
+use think\Controller;
+use think\Db;
+use think\Route;
+
+class Picturelist extends Controller
+{
+    public function index(){
+        $list=Db::name('ggzl')->order('id desc')->select();
+        $this->assign('list',$list);
+        return view();
+    }
+    public function picture_show(){
+        return view();
+    }
+    public function Add(){
+        if (request()->isPost()){
+           $data=input('post.');
+           $img=upload('zl_img');
+           if (empty($img)){
+               $this->error('未上传图片(温馨提示：图片大小不能高于2M)');
+           }elseif ($img=="上传文件大小不符！"){
+               $this->error('图片太大不能上传');
+           }
+           $data['addtime']=time();
+           $data['zl_img']=$img;
+           $result=Db::name('ggzl')->insert($data);
+           if ($result){
+               $this->success('添加成功','Picturelist/index');
+           }else{
+               $this->error('添加失败');
+           }
+        }
+        return view();
+    }
+    public function save(){
+        if (request()->isPost()){
+            $data=input('post.');
+            $img=upload('zl_img');
+            if(empty($img)){
+               $this->error('未上传图片');
+            }
+            if ($img=="上传文件大小不符！"){
+                $this->error('图片太大不能上传');
+            }
+            $data['zl_img']=$img;
+            $result=Db::name('ggzl')->where('id',$data['id'])->update($data);
+
+            if ($result){
+                $this->success('修改成功','Picturelist/index');
+            }else{
+               $this->error('修改失败');
+            }
+        }else{
+            $id=input('id');
+            $list=db('ggzl')->where('id',$id)->find();
+            $this->assign('list',$list);
+            return view();
+        }
+    }
+    public function update(){
+
+    }
+    public function del(){
+        $id=input('get.id');
+        $list=db('ggzl')->delete($id);
+        if ($list){
+            return ajaxmsg('删除成功',1);
+        }else{
+            return ajaxmsg('删除失败',0);
+        }
+    }
+    public function delAll(){
+
+            $data=input('id/a');
+            dump($data);exit;
+            $dataid=implode(',',$data);
+            $list=Db::name('ggzl')->delete($dataid);
+            if ($list){
+                $this->success('删除成功','Picturelist/index');
+            }else{
+                $this->error('删除失败');
+            }
+        }
+
+
+}

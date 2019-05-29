@@ -1,0 +1,19 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Admin
+ * Date: 2018/5/10
+ * Time: 14:46
+ */
+
+namespace app\admin\controller;
+
+
+use think\Controller;
+
+class Memberrecordshare extends Controller
+{
+    public function index(){
+        return view();
+    }
+}

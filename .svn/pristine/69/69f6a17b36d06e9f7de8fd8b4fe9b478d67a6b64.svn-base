@@ -1,0 +1,20 @@
+window.onload=function(){
+	var Oul = document.getElementsByClassName('inner-left')[0];
+	var Oli = Oul.getElementsByTagName('li') ;
+	var index = 0
+	var timer = setInterval(function() {
+		Oli[index].ontouchend = function(){
+			for(var i = 0; i < Oli.length; i++) {
+				Oli[i].removeAttribute('class')
+			}
+			this.setAttribute('class', 'click')
+		}
+		index++
+		if(index == Oli.length) {
+			clearInterval(timer)
+		}
+	},33.3)
+	
+	
+	
+} 

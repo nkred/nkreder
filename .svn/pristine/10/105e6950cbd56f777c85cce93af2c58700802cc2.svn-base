@@ -1,0 +1,54 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Admin
+ * Date: 2018/5/10
+ * Time: 10:36
+ */
+
+namespace app\admin\controller;
+
+use app\admin\validate\User;
+use think\Controller;
+use think\db;
+use think\Session;
+use think\validate;
+class Login extends Controller
+{
+    public function index(){
+        return view();
+    }
+    public function login(){
+        if (request()->isPost()){
+            $data=input('post.');
+
+            $result=$this->validate($data,'User.login');
+                if (true!==$result){
+                    $this->error($result);
+                }else{
+                    $list=db('user')
+                        ->where('username',$data['username'])
+                        ->find();
+                    if (empty($list)){
+                        $this->error('用户名不存在');
+                    }
+                        if ($list['password']!=md5($data['password'])){
+                            $this->error('密码错误');
+                        }
+//                            $time=time()+888;
+                            Session::set('id',$list['id']);
+                            Session::set('username',$data['username']);
+//                            Session::set('time',$time);
+                            $this->redirect('Index/index');
+//                            $this->success('添加成功','Index/index');
+                    }
+        }
+    }
+
+    public function loginswitch()
+    {
+        Session('username',null);
+        Session('id',null);
+        $this->redirect('Login/index');
+    }
+}

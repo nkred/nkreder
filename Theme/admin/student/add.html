@@ -1,0 +1,224 @@
+{include file="Public/header" /}
+<nav class="breadcrumb">
+	<a class="btn btn-primary radius" style="line-height:1.6em;margin-top:-5px" href="{:url('index')}">返回</a>
+	<span class="c-gray en">添加学生信息</span>
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<form action="{:url('add')}"  method="post" class="form form-horizontal" id="form-category-add" enctype="multipart/form-data">
+		<div id="tab-category" class="HuiTab">
+			<div class="tabCon">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						姓名：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="" placeholder="" name="name">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						考号：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="" placeholder="" name="card">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						性别：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="radio" value="1" placeholder="" name="sex">男
+						<input type="radio" value="0" placeholder="" name="sex">女
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						院系专业：</label>
+					<div class="formControls col-xs-4 col-sm-4">
+						<span class="select-box">
+						<select class="select" id="sel_Sub2" name="">
+							{foreach $class as $li}
+							<option value="{$li.id}">{$li.name}</option>
+							{/foreach}
+						</select>
+						</span>
+					</div>
+					<div class="formControls col-xs-4 col-sm-4">
+						<span class="select-box">
+						<select class="select" id="sel_Sub1" name="m_id">
+							{foreach $list as $li}
+							<option value="{$li.id}">{$li.name}</option>
+							{/foreach}
+						</select>
+						</span>
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						毕业学校：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="" placeholder="" name="byxx">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						录取分数：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="" placeholder="" name="lqfs">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						年级：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="" placeholder="" name="nj">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						学生类别：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="" placeholder="" name="xslb">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						学制：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="" placeholder="" name="xz">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-9 col-offset-3">
+				<button class="btn btn-primary radius" type="submit"> &nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+				<!--<input class="btn btn-primary radius" type="submit" value="">-->
+			</div>
+		</div>
+	</form>
+</div>
+{include file="Public/footer" /}
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+
+	$("#tab-category").Huitab({
+		index:0
+	});
+});
+$(function(){
+    var ue = UE.getEditor('editor');
+});
+</script>
+<script type="text/javascript">
+    function check(obj){
+
+        var checked=$(obj).is(':checked');
+        var controller=$(obj).attr('controller');
+
+        if(controller == '#'){ //下面全部选中或全部取消
+            if(checked){ //全部选中
+
+                var input=$(obj).parent().parent().next().find('input');
+                input.each(function(){
+                    $(this).prop("checked",true);
+
+                })
+
+            }else{ //全部取消选中
+                var input=$(obj).parent().parent().next().find('input');
+                input.each(function(){
+                    $(this).prop("checked",false);
+
+                })
+            }
+
+        }
+
+        var length=$('.hierarchyOne ul').length;
+        $('.hierarchyOne ul').each(function(i){
+            var tue=false;
+            var oneThis=$('.hierarchyOne ul').eq(length-i-1);
+            oneThis.find('input').each(function(){
+                if($(this).is(':checked')){
+                    tue=true;
+                    return false;
+                }
+            })
+            if(tue){
+                var input=oneThis.prev().find('input');
+                if(!input.is(':checked')){
+                    input.prop('checked',!input.is(':checked'));
+                }
+            }else{
+                var input=oneThis.prev().find('input');
+                if(input.is(':checked')){
+                    input.prop('checked',!input.is(':checked'));
+                }
+            }
+        })
+
+
+    }
+    $(function(){
+        $("#sel_Sub2").change(function () {
+            var opt=$("#sel_Sub2").val();
+            $("#sel_Sub1").empty();
+            if (opt != 0){
+                $.ajax({
+                    type: 'Get',
+                    url: "{:url('ss')}",
+                    data:{id:opt},
+                    success:function(res){
+                        var str = '';
+                        for(var i= 0 ;;i++) {
+                            var data = res[i];
+                            if (data == undefined) {
+                                // console.log(str);
+                                $("#sel_Sub1").append(str);
+                                return;
+                            }
+                            // console.log(data);
+                            // return;
+                            str += '<option value="'+data.id+'">'+data.name+'</option>';
+                        }
+                    }
+                });
+            }else {
+                str = '<option value="0">不限</option>';
+                $("#sel_Sub1").append(str);
+            }
+        });
+    });
+</script>

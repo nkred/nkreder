@@ -1,0 +1,44 @@
+{include file="Public/header" /}
+<input type="hidden" id="TenantId" name="TenantId" value="" />
+<div class="header"></div>
+<div class="loginWraper">
+  <div id="loginform" class="loginBox">
+    <form action="{:url('login')}" class="form form-horizontal" method="post">
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+        <div class="formControls col-xs-8">
+          <input name="id" type="hidden" >
+          <input name="username" type="text" placeholder="账户" value="" class="input-text size-L">
+        </div>
+      </div>
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+        <div class="formControls col-xs-8">
+          <input name="password" type="password" placeholder="密码" value="" class="input-text size-L">
+        </div>
+      </div>
+      <!--<div class="row cl">-->
+          <!--<div class="formControls col-xs-8 col-xs-offset-3">-->
+              <!--&lt;!&ndash;<input  class="input-text size-L" type="text" id="code_input" value="" placeholder="请输入验证码"  style="width: 150px; margin-bottom: 20px;"/>&ndash;&gt;-->
+              <!--&lt;!&ndash;<div id="v_container" style="width: 225px;height: 50px;float: right;"></div>&ndash;&gt;-->
+            <!--<input class="input-text size-L" type="text" name="code" placeholder="验证码"  style="width: 150px; margin-bottom: 20px;">-->
+            <!--<img src="{:captcha_src()}" id="captimg" alt="captcha" onclick="kbq();"> </div>-->
+      <!--</div>-->
+      <!--<div class="row cl">-->
+      <!--<div class="formControls col-xs-8 col-xs-offset-3">-->
+      <!--<label for="online">-->
+      <!--<input type="checkbox" name="online" id="online" value="">-->
+      <!--使我保持登录状态</label>-->
+      <!--</div>-->
+      <!--</div>-->
+      <div class="row cl">
+        <div class="formControls col-xs-8 col-xs-offset-3">
+          <input name="" type="submit"class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+          <input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="footer">Copyright @ 重庆工商大学派斯学院</div>
+{include file="Public/footer" /}

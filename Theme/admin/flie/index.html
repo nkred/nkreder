@@ -1,0 +1,78 @@
+{include file="Public/header" /}
+<nav class="breadcrumb">
+	<span class="c-gray en">文件管理</span>
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<form action=""  method="post" class="form form-horizontal" id="form-category-add" enctype="multipart/form-data">
+		<div class="row cl">
+			<div class="col-9 col-offset-3">
+				<button class="btn btn-primary radius" type="button" onclick="sjk();">删除数据库</button>
+				<button class="btn btn-primary radius" type="button" onclick="wj();">删除文件</button>
+				<!--<input class="btn btn-primary radius" type="submit" value="">-->
+			</div>
+		</div>
+	</form>
+</div>
+{include file="Public/footer" /}
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+
+	$("#tab-category").Huitab({
+		index:0
+	});
+});
+$(function(){
+    var ue = UE.getEditor('editor');
+});
+</script>
+<script type="text/javascript">
+    function sjk(){
+        $.ajax({
+            type: 'Get',
+            url: "{:url('delMysql')}",
+            success: function(data){
+                res = JSON.parse(data);
+                if(res['status'] == 1){
+                    layer.msg('已删除',{icon:1,time:1000},function () {
+                        location.reload();
+                    });
+                }else {
+                    layer.msg('无法删除',{icon:1,time:1000},function () {
+                        location.reload();
+                    });
+                }
+            },
+            error:function(data) {
+                console.log(data.msg);
+            },
+        });
+    }
+    function wj(){
+        $.ajax({
+            type: 'Get',
+            url: "{:url('delFile')}",
+            success: function(data){
+                res = JSON.parse(data);
+                if(res['status'] == 1){
+                    layer.msg('已删除',{icon:1,time:1000},function () {
+                        location.reload();
+                    });
+                }else {
+                    layer.msg('无法删除',{icon:1,time:1000},function () {
+                        location.reload();
+                    });
+                }
+            },
+            error:function(data) {
+                console.log(data.msg);
+            },
+        });
+    }
+
+</script>

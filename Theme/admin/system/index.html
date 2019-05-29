@@ -1,0 +1,170 @@
+{include file="Public/header" /}
+<nav class="breadcrumb">
+	<span class="c-gray en">相关管理</span>
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<form action="{:url('index')}"  method="post" class="form form-horizontal" id="form-category-add" enctype="multipart/form-data">
+		<input name="id" value="{$data.id}" hidden>
+		<div id="tab-category" class="HuiTab">
+			<div class="tabCon">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						一级分销比例：</label>
+					<div class="formControls col-xs-4 col-sm-3">
+						<input type="text" class="input-text" value="{$data.pdistribution}" placeholder="" name="pdistribution">
+					</div>
+					%
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						二级分销比例：</label>
+					<div class="formControls col-xs-4 col-sm-3">
+						<input type="text" class="input-text" value="{$data.tdistribution}" placeholder="" name="tdistribution">
+					</div>
+					%
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						返佣比例：</label>
+					<div class="formControls col-xs-4 col-sm-3">
+						<input type="text" class="input-text" value="{$data.maid}" placeholder="" name="maid">
+					</div>
+					%
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						推荐人数：</label>
+					<div class="formControls col-xs-4 col-sm-3">
+						<input type="text" class="input-text" value="{$data.perple}" placeholder="" name="perple">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						产品海报：</label>
+					{if condition="$data['img'] neq ''"}
+					<div class="formControls col-xs-3 col-sm-2">
+						<img src="/{$data.img}" style="height: 140px;width: 140px;">
+					</div>
+					{/if}
+					<div class="formControls col-xs-5 col-sm-6">
+						<span class="btn-upload form-group">
+						  <input class="input-text upload-url radius" type="text" name="uploadfile" id="uploadfile" readonly>
+							<a href="javascript:void();" class="btn btn-primary radius">浏览文件</a>
+						  <input type="file" multiple name="file" class="input-file">
+						</span>
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						分享海报：</label>
+					{if condition="$data['share'] neq ''"}
+					<div class="formControls col-xs-3 col-sm-2">
+						<img src="/{$data.share}" style="height: 140px;width: 140px;">
+					</div>
+					{/if}
+					<div class="formControls col-xs-5 col-sm-6">
+						<span class="btn-upload form-group">
+						  <input class="input-text upload-url radius" type="text" name="uploadfile1" id="uploadfile1" readonly>
+							<a href="javascript:void();" class="btn btn-primary radius">浏览文件</a>
+						  <input type="file" multiple name="file1" class="input-file">
+						</span>
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-9 col-offset-3">
+				<button class="btn btn-primary radius" type="submit"> &nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+				<!--<input class="btn btn-primary radius" type="submit" value="">-->
+			</div>
+		</div>
+	</form>
+</div>
+{include file="Public/footer" /}
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+
+	$("#tab-category").Huitab({
+		index:0
+	});
+});
+$(function(){
+    var ue = UE.getEditor('editor');
+});
+</script>
+<script type="text/javascript">
+    function check(obj){
+
+        var checked=$(obj).is(':checked');
+        var controller=$(obj).attr('controller');
+
+        if(controller == '#'){ //下面全部选中或全部取消
+            if(checked){ //全部选中
+
+                var input=$(obj).parent().parent().next().find('input');
+                input.each(function(){
+                    $(this).prop("checked",true);
+
+                })
+
+            }else{ //全部取消选中
+                var input=$(obj).parent().parent().next().find('input');
+                input.each(function(){
+                    $(this).prop("checked",false);
+
+                })
+            }
+
+        }
+
+        var length=$('.hierarchyOne ul').length;
+        $('.hierarchyOne ul').each(function(i){
+            var tue=false;
+            var oneThis=$('.hierarchyOne ul').eq(length-i-1);
+            oneThis.find('input').each(function(){
+                if($(this).is(':checked')){
+                    tue=true;
+                    return false;
+                }
+            })
+            if(tue){
+                var input=oneThis.prev().find('input');
+                if(!input.is(':checked')){
+                    input.prop('checked',!input.is(':checked'));
+                }
+            }else{
+                var input=oneThis.prev().find('input');
+                if(input.is(':checked')){
+                    input.prop('checked',!input.is(':checked'));
+                }
+            }
+        })
+
+
+    }
+
+</script>

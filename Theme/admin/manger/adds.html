@@ -1,0 +1,149 @@
+{include file="Public/header" /}
+<nav class="breadcrumb">
+	<a class="btn btn-primary radius" style="line-height:1.6em;margin-top:-5px" href="{:url('index')}">返回</a>
+	<span class="c-gray en">添加管理员</span>
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<article class="page-container">
+	<form class="form form-horizontal" action=""  method="post" id="frm_manger">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">
+				<span class="c-red">*</span>
+				分组：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<span class="select-box">
+						<select class="select" id="sel_Sub" name="group_id">
+							{foreach $group as $li}
+							<option value="{$li.id}">{$li.name}</option>
+							{/foreach}
+						</select>
+					</span>
+				</div>
+			<div class="col-3">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">
+				<span class="c-red">*</span>
+				院系专业：</label>
+			<div class="formControls col-xs-4 col-sm-4">
+						<span class="select-box">
+						<select class="select" id="sel_Sub2" name="">
+							<option value="0">不限</option>
+							{foreach $class as $li}
+							<option value="{$li.id}">{$li.name}</option>
+							{/foreach}
+						</select>
+						</span>
+			</div>
+			<div class="formControls col-xs-4 col-sm-4">
+						<span class="select-box">
+						<select class="select" id="sel_Sub1" name="m_id">
+							<option value="0">不限</option>
+						</select>
+						</span>
+			</div>
+			<div class="col-3">
+			</div>
+		</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>姓名：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" value="" placeholder="请输入账号" id="name" name="name">
+		</div>
+	</div>
+		<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>登陆账号：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" value="" placeholder="请输入账号" id="username" name="username">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>初始密码：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="password" class="input-text" autocomplete="off" value="" placeholder="请输入初始密码" id="pwd" name="password">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>确认密码：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="password" class="input-text" autocomplete="off"  placeholder="确认新密码" id="pwd1" name="pwd">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>是否启用：</label>
+		<div class="formControls col-xs-8 col-sm-9 skin-minimal">
+			<div class="radio-box">
+				<input name="status" type="radio"  value="1">
+				<label for="sex-1">是</label>
+			</div>
+			<div class="radio-box">
+				<input type="radio" name="status" checked value="0">
+				<label for="sex-2">否</label>
+			</div>
+		</div>
+	</div>
+	<div class="row cl">
+		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+			<input class="btn btn-primary radius" type="button" onclick="refer();" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+		</div>
+	</div>
+	</form>
+</article>
+{include file="Public/footer" /}
+<script type="text/javascript">
+	console.log(1);
+	function refer() {
+	    var name = $('#name').val();
+	    if(name == ''){
+	        alert('请输入姓名');
+	        return false;
+		}
+		var username = $('#username').val();
+	    if(username == ''){
+	        alert('请输入登陆账号');
+	        return false;
+		}
+		var pwd = $('#pwd').val();
+	    if(pwd == ''){
+	        alert('请输入密码');
+	        return false;
+		}
+		var pwd1 = $('#pwd1').val();
+	    if(pwd != pwd1){
+	        alert('两次密码输入不相同');
+	        return false;
+		}
+		$('#frm_manger').submit();
+    }
+    $(function(){
+        $("#sel_Sub2").change(function () {
+            var opt=$("#sel_Sub2").val();
+            $("#sel_Sub1").empty();
+            if (opt != 0){
+                $.ajax({
+                    type: 'Get',
+                    url: "{:url('ss')}",
+                    data:{id:opt},
+                    success:function(res){
+                        var str = '';
+                        for(var i= 0 ;;i++) {
+                            var data = res[i];
+                            if (data == undefined) {
+                                // console.log(str);
+                                $("#sel_Sub1").append(str);
+                                return;
+                            }
+                            // console.log(data);
+                            // return;
+                            str += '<option value="'+data.id+'">'+data.name+'</option>';
+                        }
+                    }
+                });
+			}else {
+                str = '<option value="0">不限</option>';
+                $("#sel_Sub1").append(str);
+			}
+        });
+    });
+</script>

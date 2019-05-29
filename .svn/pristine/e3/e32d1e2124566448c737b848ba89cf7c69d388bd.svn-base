@@ -1,0 +1,61 @@
+<?php
+// +----------------------------------------------------------------------
+// | ThinkPHP [ WE CAN DO IT JUST THINK ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2006-2016 http://thinkphp.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+// +----------------------------------------------------------------------
+// | Author: 流年 <liu21st@gmail.com>
+// +----------------------------------------------------------------------
+
+// 应用公共文件
+
+function ajaxmsg($msg ='',$status = 1,$data = '',$errcode = '')
+{
+    $json['msg'] = $msg;
+    $json['data'] = $data;
+    $json['status'] = $status;
+    if ($errcode) {
+        $json['errcode'] = $errcode;
+    }
+    return json_encode($json, true);
+}
+/*
+ * 文件上传
+ */
+function upload($file)
+{
+    $upload = request()->file($file);
+    if ($upload) {
+        if(is_array($upload)){
+            foreach ($upload as $k=>$v){
+                $info[] = $v->validate(['size' => 808080, 'ext' => 'jpg,gif,png,jpeg,zip,gz,rar,doc,docx,xls,xlsx,ppt,pptx,txt,swf'])->move(ROOT_PATH . 'public' . DS . 'uploads');
+            }
+        }else{
+            $info = $upload->validate(['size' => 808080, 'ext' => 'jpg,gif,png,jpeg,zip,gz,rar,doc,docx,xls,xlsx,ppt,pptx,txt,swf'])->move(ROOT_PATH . 'public' . DS . 'uploads');
+        }
+        if ($info) {
+            if (is_array($info)){
+                foreach ($info as $i){
+                    $item[] = $i->GetSaveName();
+                    $image=json_encode($item);
+                }
+            }else{
+                $image = $info->GetSaveName();
+            }
+            return $image;
+        } else {
+            return $upload->getError();
+        }
+    }
+}
+/*
+ * 字符串截取
+ */
+function subtext($text,$length){
+    if(mb_strlen($text, 'utf8') > $length)
+        return mb_substr($text,0,$length,'utf8');
+        return $text;
+    }
+

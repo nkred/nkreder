@@ -1,0 +1,44 @@
+{include file="Public/header" /}
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+	<span class="c-gray en">&gt;</span>
+	统计管理
+	<span class="c-gray en">&gt;</span>
+	专业统计
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<div class="mt-20">
+		<div style="padding-bottom: 10px;">
+			<label>总人数：{$data.z_num}  </label> <label>报到人数：{$data.b_num}  </label>
+			<label>报到率：{$data.bdl}  </label>   <label>注册人数：{$data.c_num}  </label>
+			<label>注册率：{$data.zcl}  </label>
+		</div>
+		<form action="" method="post" id="Myform">
+		<table class="table table-border table-bordered table-hover table-bg table-sort">
+			<thead>
+				<tr class="text-c">
+					<th>专业名称</th>
+					<th>总人数</th>
+					<th>报到人数</th>
+					<th>报到率</th>
+					<th>注册人数</th>
+					<th>注册率</th>
+				</tr>
+			</thead>
+			<tbody>
+			{foreach $list as $li}
+				<tr class="text-c">
+					<td>{$li.pid}-{$li.m_id}</td>
+					<td>{$li.z_num}</td>
+					<td>{$li.b_num}</td>
+					<td>{$li.bdl}</td>
+					<td>{$li.c_num}</td>
+					<td>{$li.zcl}</td>
+				</tr>
+			{/foreach}
+			</tbody>
+		</table>
+		</form>
+	</div>
+</div>
+{include file="Public/footer" /}

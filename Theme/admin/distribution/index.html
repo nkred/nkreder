@@ -1,0 +1,76 @@
+{include file="Public/header" /}
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+	<span class="c-gray en">&gt;</span>
+	宿舍管理
+	<span class="c-gray en">&gt;</span>
+	分配宿舍
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<!--<div class="text-c">-->
+		<!--<input type="text" name="" id="" placeholder="栏目名称、id" style="width:250px" class="input-text">-->
+		<!--<button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>-->
+	<!--</div>-->
+	<!--<div class="cl pd-5 bg-1 bk-gray mt-20">-->
+		<!--<span class="l">-->
+		<!--<a class="btn btn-primary radius" href="{:url('add')}"><i class="Hui-iconfont">&#xe600;</i> 添加宿舍</a>-->
+		<!--</span>-->
+		<!--&lt;!&ndash;<span class="r">共有数据：<strong>54</strong> 条</span>&ndash;&gt;-->
+	<!--</div>-->
+	<div class="mt-20">
+		<form action="" method="post" id="Myform">
+		<table class="table table-border table-bordered table-hover table-bg table-sort">
+			<thead>
+				<tr class="text-c">
+					<th width="25"><input type="checkbox" name="" value=""></th>
+					<th width="80">ID</th>
+					<th>宿舍</th>
+					<th>所属专业</th>
+					<th>时间</th>
+					<th width="100">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			{foreach $data as $li}
+				<tr class="text-c">
+					<td><input type="checkbox" name="id[]" value="{$li.id}"></td>
+					<td>{$li.id}</td>
+					<td>{$li.name}</td>
+					<td>{$li.m_id}</td>
+					<td>{$li.time|date="Y-m-d",###}</td>
+					<td class="f-14"><a title="编辑" href="{:url('save',array('id'=>$li['id']))}"  style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+					</td>
+				</tr>
+			{/foreach}
+			</tbody>
+		</table>
+		</form>
+	</div>
+</div>
+<script type="text/javascript">
+    function public_empty(id){
+        layer.confirm('确认要清空吗？',function(index){
+            $.ajax({
+                type: 'Get',
+                url: "{:url('emptys')}",
+                data:{id:id},
+                success: function(data){
+                    res = JSON.parse(data);
+                    if(res['status'] == 1){
+                        layer.msg('已清空',{icon:1,time:1000},function () {
+                            location.reload();
+                        });
+                    }else {
+                        layer.msg('无法清空',{icon:1,time:1000},function () {
+                            location.reload();
+                        });
+                    }
+                },
+                error:function(data) {
+                    console.log(data.msg);
+                },
+            });
+        });
+    }
+</script>
+{include file="Public/footer" /}

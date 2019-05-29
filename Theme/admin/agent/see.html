@@ -1,0 +1,35 @@
+{include file="Public/header" /}
+<nav class="breadcrumb">
+	<a class="btn btn-primary radius" style="line-height:1.6em;margin-top:-5px" href="{:url('save',['id'=>$pid])}">返回</a>
+	<span class="c-gray en">查看下线</span>
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<div class="mt-20">
+		<form action="" method="post" id="Myform">
+		<table class="table table-border table-bordered table-hover table-bg table-sort">
+			<thead>
+				<tr class="text-c">
+					<th width="80">ID</th>
+					<th>真实姓名</th>
+					<th>等级</th>
+					<!--<th width="80">排序</th>-->
+					<th width="100">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			{foreach $data as $li}
+				<tr class="text-c">
+					<td>{$li.id}</td>
+					<td>{$li.name}</td>
+					<td>{$li.level}</td>
+					<td class="f-14">
+						<a title="删除" href="javascript:;" onclick="public_del('{$li.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				</tr>
+			{/foreach}
+			</tbody>
+		</table>
+		</form>
+	</div>
+</div>
+{include file="Public/footer" /}

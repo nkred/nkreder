@@ -1,0 +1,40 @@
+
+
+window.onload = function(){
+	var Oul = document.getElementById("banner-all");
+	var Oli = Oul.getElementsByTagName("li");
+	var wd = document.documentElement.clientWidth;
+	for(var i = 0;i<Oli.length;i++) {
+		Oli[i].style.width=wd+'px';
+	}
+	Oul.style.width =Oli.length*Oli[0].offsetWidth+'px';
+	var div = document.createElement('div')
+	div.setAttribute('class','clearfix')
+	div.style.position = 'absolute'
+	div.style.bottom = '1rem'
+	for(var i = 0;i<Oli.length;i++) {
+		var sp = document.createElement('span')
+		sp.setAttribute('index',i)
+		sp.setAttribute('style','float: left; width: 0.5rem;height:0.5rem;background: #fff;border:#cfcfcf 0.05rem solid;border-radius: 50%;margin-left: 1rem;')
+		if(i == Oli.length - 1){
+			sp.style.marginRight = '1rem'
+		}
+		div.appendChild(sp)
+	}
+	var banner = document.getElementById('banner')
+	banner.appendChild(div)
+	var dw = div.clientWidth
+	
+	div.style.left = (wd-dw)/2 + 'px'
+	
+	var timer = setInterval(function(){
+	     Oul.style.left = Oul.offsetLeft-Oli[0].offsetWidth+'px';
+	     console.log(Oul.offsetLeft)
+	     if(Oul.offsetLeft<-(Oli.length-2)*Oli[0].offsetWidth)
+	{
+			console.log(Oul.offsetLeft)
+	     Oul.style.left=0;
+	}
+	},2500)
+	
+}

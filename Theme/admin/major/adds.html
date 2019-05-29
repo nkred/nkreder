@@ -1,0 +1,45 @@
+{include file="Public/header" /}
+<nav class="breadcrumb">
+	<a class="btn btn-primary radius" style="line-height:1.6em;margin-top:-5px" href="{:url('index')}">返回</a>
+	<span class="c-gray en">添加院系</span>
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+	<form action="{:url('adds')}"  method="post" class="form form-horizontal" id="form-category-add">
+		<div id="tab-category" class="HuiTab">
+			<div class="tabCon">
+				<input hidden type="text" class="input-text" value="0" placeholder="" name="pid">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-3">
+						<span class="c-red">*</span>
+						院系名称：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" value="" placeholder="" name="name">
+					</div>
+					<div class="col-3">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-9 col-offset-3">
+				<button class="btn btn-primary radius" type="submit"> &nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+				<!--<input class="btn btn-primary radius" type="submit" value="">-->
+			</div>
+		</div>
+	</form>
+</div>
+{include file="Public/footer" /}
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+
+	$("#tab-category").Huitab({
+		index:0
+	});
+});
+</script>
