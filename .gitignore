@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .idea
 composer.lock
 *.log
 thinkphp
+=======
+.svn/
+>>>>>>> 65fc4c09169387156886438feeaf3e445f2eb1c8
